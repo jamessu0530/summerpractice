@@ -1,3 +1,5 @@
+package app.keelung.model;
+
 public class Sight {
     private String sightName;
     private String zone;
@@ -44,4 +46,5 @@ public class Sight {
             + "Address: " + address + "\n"
             + "Description: " + description + "\n";
     }
-} 
+}
+

@@ -1,15 +1,18 @@
 plugins {
     id 'java'
-    id 'application'
+    id 'org.springframework.boot' version '2.7.18'
+    id 'io.spring.dependency-management' version '1.1.5'
 }
 repositories {
     mavenCentral()
 }
 dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.jsoup:jsoup:1.19.1'
 }
-application {
-    mainClass = 'CrawlKeelungFirstPage'
+
+springBoot {
+    mainClass = 'app.keelung.SummerPracticeApplication'
 }
 
 java {
